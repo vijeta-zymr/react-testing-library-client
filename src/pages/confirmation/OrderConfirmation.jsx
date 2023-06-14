@@ -29,7 +29,9 @@ export default function OrderConfirmation({ setOrderPhase }) {
   }
 
   const newOrderButton = (
-    <Button onClick={handleClick}>Create new order</Button>
+    <Button data-testid="new-order-btn" onClick={handleClick}>
+      Create new order
+    </Button>
   );
 
   if (error) {
@@ -43,7 +45,7 @@ export default function OrderConfirmation({ setOrderPhase }) {
 
   if (orderNumber) {
     return (
-      <div style={{ textAlign: "center" }}>
+      <div data-testid="order-details" style={{ textAlign: "center" }}>
         <h1>Thank You!</h1>
         <p>Your order number is {orderNumber}</p>
         <p style={{ fontSize: "25%" }}>
