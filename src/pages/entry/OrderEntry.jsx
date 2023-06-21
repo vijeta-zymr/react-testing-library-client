@@ -20,6 +20,7 @@ export default function OrderEntry({ setOrderPhase }) {
             Grand total: {formatCurrency(totals.scoops + totals.toppings)}
           </h2>
           <Button
+            style={{ backgroundColor: "#EC5B55", borderColor: "#EC5B55" }}
             disabled={orderDisabled}
             onClick={() => setOrderPhase("review")}
           >

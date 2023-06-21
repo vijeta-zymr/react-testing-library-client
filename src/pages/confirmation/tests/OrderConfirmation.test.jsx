@@ -1,10 +1,14 @@
 /* eslint-disable testing-library/no-wait-for-multiple-assertions */
-import { render, screen } from "../../../test-utils/testing-library-utils";
+import {
+  render,
+  screen,
+  waitFor,
+  cleanup,
+} from "../../../test-utils/testing-library-utils";
 // import { server } from "../../../mocks/server";
 // import { rest } from "msw";
 import axios from "axios";
 import OrderConfirmation from "../OrderConfirmation";
-import { waitFor, cleanup } from "@testing-library/react";
 
 describe("OrderConfirmation", () => {
   afterEach(() => {

@@ -29,7 +29,11 @@ export default function OrderConfirmation({ setOrderPhase }) {
   }
 
   const newOrderButton = (
-    <Button data-testid="new-order-btn" onClick={handleClick}>
+    <Button
+      style={{ backgroundColor: "#EC5B55", borderColor: "#EC5B55" }}
+      data-testid="new-order-btn"
+      onClick={handleClick}
+    >
       Create new order
     </Button>
   );
