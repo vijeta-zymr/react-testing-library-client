@@ -49,7 +49,10 @@ export default function OrderConfirmation({ setOrderPhase }) {
 
   if (orderNumber) {
     return (
-      <div data-testid="order-details" style={{ textAlign: "center" }}>
+      <div
+        data-testid="order-details"
+        style={{ textAlign: "center", marginTop: "20px" }}
+      >
         <h1>Thank You!</h1>
         <p>Your order number is {orderNumber}</p>
         <p style={{ fontSize: "25%" }}>

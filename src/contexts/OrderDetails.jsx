@@ -33,7 +33,6 @@ export function OrderDetailsProvider(props) {
     setOptionCounts(newOptionCounts);
 
     // alternate way using function argument to setOptionCounts
-    // see https://www.udemy.com/course/react-testing-library/learn/#questions/18721990/
     // setOptionCounts((previousOptionCounts) => ({
     //   ...previousOptionCounts,
     //   [optionType]: {
