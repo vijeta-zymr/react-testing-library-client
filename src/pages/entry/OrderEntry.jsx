@@ -13,7 +13,7 @@ export default function OrderEntry({ setOrderPhase }) {
     <div>
       <div style={{ marginTop: "20px" }}>
         <div style={{ float: "left" }}>
-          <h1>Design Your Ice-cream!</h1>
+          <h1>Order Ice-cream!</h1>
         </div>
         <div style={{ float: "right" }}>
           <h2>
