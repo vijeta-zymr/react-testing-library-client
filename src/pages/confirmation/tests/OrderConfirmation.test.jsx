@@ -3,7 +3,6 @@ import {
   render,
   screen,
   waitFor,
-  cleanup,
 } from "../../../test-utils/testing-library-utils";
 // import { server } from "../../../mocks/server";
 // import { rest } from "msw";
@@ -12,12 +11,10 @@ import OrderConfirmation from "../OrderConfirmation";
 
 describe("OrderConfirmation", () => {
   afterEach(() => {
-    cleanup();
     jest.resetAllMocks();
   });
 
   afterAll(() => {
-    cleanup();
     jest.clearAllMocks();
   });
 
